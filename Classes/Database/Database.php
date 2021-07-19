@@ -6,9 +6,13 @@ use App\Interfaces\Database\DatabaseInterface;
 use Exception;
 use PDO;
 
-class MySQLDatabase implements DatabaseInterface
+class Database implements DatabaseInterface
 {
     private static $pdo;
+
+    public function __construct()
+    {
+    }
     
     public static function getConnection() : PDO
     {
@@ -21,7 +25,7 @@ class MySQLDatabase implements DatabaseInterface
             $config = include './config.php';
 
             self::$pdo = new PDO(
-                $config['connection'],
+                $config['connection'] . ';dbname=' . $config['name'],
                 $config['username'],
                 $config['password'],
                 $config['options']

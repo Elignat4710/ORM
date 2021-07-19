@@ -9,7 +9,10 @@ class ComposerStaticInitac8da7c83baacffe8cac5a07ec06c12c
     public static $classMap = array (
         'App\\Classes\\Database\\Builder' => __DIR__ . '/../..' . '/Classes/Database/Builder.php',
         'App\\Classes\\Database\\Connection' => __DIR__ . '/../..' . '/Classes/Database/Connection.php',
-        'App\\Classes\\Database\\MySQLDatabase' => __DIR__ . '/../..' . '/Classes/Database/MySQLDatabase.php',
+        'App\\Classes\\Database\\Database' => __DIR__ . '/../..' . '/Classes/Database/Database.php',
+        'App\\Classes\\Models\\Model' => __DIR__ . '/../..' . '/Classes/Models/Model.php',
+        'App\\Classes\\Models\\PostModel' => __DIR__ . '/../..' . '/Classes/Models/PostModel.php',
+        'App\\Classes\\Models\\UserModel' => __DIR__ . '/../..' . '/Classes/Models/UserModel.php',
         'App\\Interfaces\\Database\\ConnectionInterface' => __DIR__ . '/../..' . '/Interfaces/Database/ConnectionInterface.php',
         'App\\Interfaces\\Database\\DatabaseInterface' => __DIR__ . '/../..' . '/Interfaces/Database/DatabaseInterface.php',
         'ComposerAutoloaderInitac8da7c83baacffe8cac5a07ec06c12c' => __DIR__ . '/..' . '/composer/autoload_real.php',
